@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+}
+
+#container {
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+#title {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.25;
+  padding: 0.6rem;
+}
+
+#description {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+#survey-form {
+  background-color: #02040310;
+  padding: 3rem 2.5rem;
+  border-radius: 8px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+#submit {
+  background-color: #885C9E;
+  color: #fff;
+  padding: 0.9rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1
+  transition: background-color 0.2s ease;
+  border: none;
+  border-radius: 6px;
+}
+
+#submit:hover {
+    background-color: #885C9E80;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+textarea {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #999999;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: '▼';
+  color: #999999;
+  font-size: 0.9rem;
+  top: 1.75rem;
+  right: 0.625rem;
+  position: absolute;
+}
+
+option:not(:first-of-type) {
+  color: black;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  margin-top: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  border-color: #885C9E;
+  box-shadow: 0 0 8px #885C9E;
+}
+
